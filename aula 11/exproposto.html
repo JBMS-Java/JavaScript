@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Onde você nasceu? <input type="text" name="nac" id="nac"> 
+    <input type="button" value="Verificar" onclick="testar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function testar() {
+            var txtv = window.document.querySelector('#nac');
+            var res = window.document.querySelector('#res');
+            var n = txtv.value.trim();
+
+            res.innerHTML = `Você nasceu no ${n}.`;
+
+            if (n.toLowerCase( === 'brasil')) {
+                res.innerHTML += `<p>Você é <strong>brasileiro!</strong></p>`;
+            } else {
+                res.innerHTML += `<p>Você é <strong>estrangeiro</strong></p>`;
+            }
+        }
+    </script>
+</body>
