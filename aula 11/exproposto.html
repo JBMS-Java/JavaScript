@@ -14,16 +14,16 @@
     </div>
     <script>
         function testar() {
-            var txtv = window.document.querySelector('#nac');
-            var res = window.document.querySelector('#res');
-            var n = txtv.value.trim();
+            var txtv = window.document.querySelector('#nac')
+            var res = window.document.querySelector('#res')
+            var n = txtv.value.trim()
 
-            res.innerHTML = `Você nasceu no ${n}.`;
+            res.innerHTML = `Você nasceu no ${n}.`
 
             if (n.toLowerCase( === 'brasil')) {
-                res.innerHTML += `<p>Você é <strong>brasileiro!</strong></p>`;
+                res.innerHTML += `<p>Você é <strong>brasileiro!</strong></p>`
             } else {
-                res.innerHTML += `<p>Você é <strong>estrangeiro</strong></p>`;
+                res.innerHTML += `<p>Você é <strong>estrangeiro</strong></p>`
             }
         }
     </script>
